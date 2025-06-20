@@ -36,7 +36,7 @@ from typing import Dict, List, Tuple
 import gc
 
 # Initialize the Dash app
-app = Dash(__name__)
+app = Dash()
 
 # Define the theme
 theme = {

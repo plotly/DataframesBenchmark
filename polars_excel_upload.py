@@ -9,10 +9,10 @@ import io
 from datetime import datetime
 
 # Initialize Dash app
-app = Dash(__name__, suppress_callback_exceptions=True)
+app = Dash(suppress_callback_exceptions=True)
 
 # Define the layout
-app.layout = html.Div([
+app.layout = [
     html.H1("Excel Data Viewer with Map Visualization Polars", style={'textAlign': 'center'}),
 
     # Upload component
@@ -44,7 +44,7 @@ app.layout = html.Div([
 
     # Store component to hold the data
     dcc.Store(id='stored-data')
-])
+]
 
 
 def parse_contents(contents, filename):
